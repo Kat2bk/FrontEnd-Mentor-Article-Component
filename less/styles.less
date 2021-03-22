@@ -1,0 +1,37 @@
+// 1. you can attach a unique class to another
+// within the stylesheet by extending it like so:
+// .primary-btn:extend(.classname)
+
+//2. creating variables with the @ sign as a 
+// stand-in for certain elements such as color.
+
+// 3. mixins: creating an entire class with a broad
+// range of elements and attaching it to other
+// classes.
+
+// 4. mixins with parameters: creating a class with
+// variable placeholders to insert customized data
+// .border-radius(@radius) {
+    // border-radius: @radius
+// }
+
+// and now we can attach this to another class - 
+// .btn {
+// .border-radius(10px);
+
+// 5. nesting elements
+// ul#menu {
+//    li {
+//      }
+// }
+
+// 6. attaching selectors inside nested elements
+// by using ampersand &:hover
+
+// 7. you can add other functions to classes
+// such as color operators like
+// darken(insert color here, what %);
+
+// 8. auto updating mixin with condition
+// .text-color(@a) when (lightness(@a) >= 50%) {
+// color: black;

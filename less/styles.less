@@ -97,13 +97,13 @@ main {
 
 .container {
     width: 40rem;
-    margin-top: -4em;
-    padding-top: 2em;
+    margin-top: -3em;
+    padding-top: 2.4em;
     @media (min-width: 760px) {
-        margin: 0;
+        width: 55rem;
+        margin: 1rem;
         padding-top: 1rem;
-        margin-left: -8rem;
-        border-radius: 0 1rem 1rem 0;
+        margin-left: .5rem;
     }
 }
 
@@ -123,7 +123,87 @@ p {
     font-size: 1.5rem;
     padding: 0 4.5rem 0;
     @media (min-width: 760px) {
-        font-size: 1.2rem;
+        font-size: 1.4rem;
     }
 }
 
+.profile {
+    display: flex;
+    font-size: 1.2rem;
+    margin: 0;
+    margin-top: 3.4rem;
+    padding: 0 3.4rem 2.4rem;
+    gap: 1rem;
+    @media (min-width: 760px) {
+        padding-right: 5rem;
+        padding-bottom: 5rem;
+    }
+    .avatar {
+        order: 0;
+        border-radius: 50%;
+    }
+    .share-btn {
+        order: 2;
+        position: relative;
+        background-color: @shadeof-blue;
+        align-items: center;
+        cursor: pointer;
+        padding: 1rem;
+        border-radius: 50%;
+        &:focus, &:hover {
+            background-color: darken(@shadeof-blue, 10%);
+        }
+
+    }
+    figcaption {
+        order: 1;
+        margin-right: auto;
+    }
+
+    .name {
+        font-weight: 700;
+        font-size: 1.5rem;
+        letter-spacing: 1.5px;
+    }
+}
+
+.links {
+    // display: none;
+    display: flex;
+    gap: 1.5rem;
+    background-color: @dark-blue;
+    padding: 2rem 3rem;
+    margin: 0;
+    margin-top: -8rem;
+    cursor: pointer;
+    border-radius: 0 0 1rem 1rem;
+    @media (min-width: 760px) {
+        align-items: center;
+        position: relative;
+        width: 26rem;
+        height: 5rem;
+        left: 38rem;
+        bottom: 8.5rem;
+        border-radius: 1rem;
+        .link {
+            position: relative;
+        }
+        &:before {
+            content: '';
+            position: absolute;
+            left: 8rem;
+            top: 2rem;
+            background-color: @dark-blue;
+            // text-align: center;
+            width: 4rem;
+            height: 4rem;
+            transform: rotate(45deg);
+        }
+    }
+    figcaption {
+        position: relative;
+        text-transform: uppercase;
+        letter-spacing: .7rem;
+        order: -1;
+    }
+}

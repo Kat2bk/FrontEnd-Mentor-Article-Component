@@ -50,15 +50,15 @@ main > img {
 }
 .container {
   width: 40rem;
-  margin-top: -4em;
-  padding-top: 2em;
+  margin-top: -3em;
+  padding-top: 2.4em;
 }
 @media (min-width: 760px) {
   .container {
-    margin: 0;
+    width: 55rem;
+    margin: 1rem;
     padding-top: 1rem;
-    margin-left: -8rem;
-    border-radius: 0 1rem 1rem 0;
+    margin-left: 0.5rem;
   }
 }
 h1 {
@@ -80,6 +80,86 @@ p {
 }
 @media (min-width: 760px) {
   p {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
   }
+}
+.profile {
+  display: flex;
+  font-size: 1.2rem;
+  margin: 0;
+  margin-top: 3.4rem;
+  padding: 0 3.4rem 2.4rem;
+  gap: 1rem;
+}
+@media (min-width: 760px) {
+  .profile {
+    padding-right: 5rem;
+    padding-bottom: 5rem;
+  }
+}
+.profile .avatar {
+  order: 0;
+  border-radius: 50%;
+}
+.profile .share-btn {
+  order: 2;
+  position: relative;
+  background-color: hsl(210, 46%, 95%);
+  align-items: center;
+  cursor: pointer;
+  padding: 1rem;
+  border-radius: 50%;
+}
+.profile .share-btn:focus,
+.profile .share-btn:hover {
+  background-color: hsl(210, 46%, 85%);
+}
+.profile figcaption {
+  order: 1;
+  margin-right: auto;
+}
+.profile .name {
+  font-weight: 700;
+  font-size: 1.5rem;
+  letter-spacing: 1.5px;
+}
+.links {
+  display: flex;
+  gap: 1.5rem;
+  background-color: hsl(217, 19%, 35%);
+  padding: 2rem 3rem;
+  margin: 0;
+  margin-top: -8rem;
+  cursor: pointer;
+  border-radius: 0 0 1rem 1rem;
+}
+@media (min-width: 760px) {
+  .links {
+    align-items: center;
+    position: relative;
+    width: 26rem;
+    height: 5rem;
+    left: 38rem;
+    bottom: 8.5rem;
+    border-radius: 1rem;
+  }
+  .links .link {
+    position: relative;
+  }
+  .links:before {
+    content: '';
+    position: absolute;
+    left: 8rem;
+    top: 2rem;
+    background-color: hsl(217, 19%, 35%);
+    width: 4rem;
+    height: 4rem;
+    transform: rotate(45deg);
+  }
+}
+.links figcaption {
+  position: relative;
+  text-transform: uppercase;
+  letter-spacing: 0.7rem;
+  order: -1;
 }

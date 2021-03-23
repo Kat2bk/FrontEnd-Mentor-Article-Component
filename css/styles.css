@@ -124,7 +124,7 @@ p {
   letter-spacing: 1.5px;
 }
 .links {
-  display: flex;
+  display: none;
   gap: 1.5rem;
   background-color: hsl(217, 19%, 35%);
   padding: 2rem 3rem;

@@ -129,18 +129,19 @@ p {
   background-color: hsl(217, 19%, 35%);
   padding: 2rem 3rem;
   margin: 0;
-  margin-top: -8rem;
+  margin-top: -7rem;
   cursor: pointer;
   border-radius: 0 0 1rem 1rem;
 }
 @media (min-width: 760px) {
   .links {
+    margin-top: -5rem;
     align-items: center;
     position: relative;
     width: 26rem;
     height: 5rem;
-    left: 38rem;
-    bottom: 8.5rem;
+    left: 41rem;
+    bottom: 10rem;
     border-radius: 1rem;
   }
   .links .link {
@@ -149,7 +150,7 @@ p {
   .links:before {
     content: '';
     position: absolute;
-    left: 8rem;
+    left: 5rem;
     top: 2rem;
     background-color: hsl(217, 19%, 35%);
     width: 4rem;
